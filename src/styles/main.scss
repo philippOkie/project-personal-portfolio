@@ -1,4 +1,7 @@
 @import url(./reset.scss);
+@import url(./toggle-switch.scss);
+@import url(./animations.scss);
+@import url(./mq.scss);
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 :root {
@@ -18,6 +21,16 @@ body {
   background-color: var(--main-color);
   color: var(--main-dark-color);
   font-family: "Poppins", sans-serif;
+}
+
+.main-container {
+  width: 55%;
+  height: 99%;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  gap: var(--gap-size);
 }
 
 header {
@@ -79,6 +92,11 @@ main {
     border: var(--border-width) solid var(--main-dark-color);
     border-radius: var(--border-radius);
     background-color: var(--main-box-bgclr);
+    padding: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .main-box4 {
     grid-area: 2 / 4 / 4 / 6;
@@ -140,14 +158,4 @@ footer {
     justify-content: center;
     align-items: center;
   }
-}
-
-.main-container {
-  width: 55%;
-  height: 99%;
-
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(7, 1fr);
-  gap: var(--gap-size);
 }
