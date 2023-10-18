@@ -1,13 +1,23 @@
 @import url(./reset.scss);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 :root {
+  --border-radius: 20px;
+  --border-width: 0px;
+  --gap-size: 10px;
+  --main-color: #c6c5b9;
+  --main-dark-color: #393d3f;
+  --main-box-bgclr: #fdfdff;
 }
 
 body {
-  height: 150%;
+  height: 176%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--main-color);
+  color: var(--main-dark-color);
+  font-family: "Poppins", sans-serif;
 }
 
 header {
@@ -16,76 +26,128 @@ header {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr;
-  gap: 10px;
+  gap: var(--gap-size);
   .header-box1 {
-    border: 3px solid black;
+    border: var(--border-width) solid var(--main-dark-color);
+    border-radius: var(--border-radius);
+    background-color: var(--main-box-bgclr);
   }
   .header-box2 {
-    border: 3px solid black;
+    border: var(--border-width) solid var(--main-dark-color);
+    border-radius: var(--border-radius);
+    background-color: var(--main-box-bgclr);
+    font-weight: 600;
+    font-size: 4.5em;
+    padding: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 main {
-  grid-area: 2 / 1 / 5 / 2;
+  grid-area: 2 / 1 / 6 / 2;
 
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  gap: 10px;
+  gap: var(--gap-size);
 
-  .box1 {
+  .main-box1 {
     grid-area: 1 / 1 / 4 / 4;
-    border: 3px solid black;
+    border: var(--border-width) solid var(--main-dark-color);
+    border-radius: var(--border-radius);
+    background-color: var(--main-box-bgclr);
   }
-  .box2 {
+  .main-box2 {
     grid-area: 1 / 4 / 2 / 5;
-    border: 3px solid black;
+    border: var(--border-width) solid var(--main-dark-color);
+    border-radius: var(--border-radius);
+    background-color: var(--main-box-bgclr);
+    color: var(--main-dark-color);
+    font-weight: 700;
+    padding: 5%;
+    font-size: 5em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .box3 {
+  .main-box3 {
     grid-area: 1 / 5 / 2 / 6;
-    border: 3px solid black;
+    border: var(--border-width) solid var(--main-dark-color);
+    border-radius: var(--border-radius);
+    background-color: var(--main-box-bgclr);
   }
-  .box4 {
+  .main-box4 {
     grid-area: 2 / 4 / 4 / 6;
-    border: 3px solid black;
+    border: var(--border-width) solid var(--main-dark-color);
+    border-radius: var(--border-radius);
+    background-color: var(--main-box-bgclr);
   }
-  .box5 {
+  .main-box5 {
     grid-area: 4 / 1 / 5 / 6;
-    border: 3px solid black;
+    border: var(--border-width) solid var(--main-dark-color);
+    border-radius: var(--border-radius);
+    background-color: var(--main-box-bgclr);
   }
 }
 
 footer {
-  grid-area: 5 / 1 / 8 / 2;
+  grid-area: 6 / 1 / 8 / 2;
 
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
+  gap: var(--gap-size);
   .footer-box1 {
     grid-area: 1 / 3 / 3 / 6;
-    border: 3px solid black;
+    border: var(--border-width) solid var(--main-dark-color);
+    border-radius: var(--border-radius);
+    background-color: var(--main-box-bgclr);
   }
   .footer-box2 {
     grid-area: 2 / 1 / 3 / 3;
-    border: 3px solid black;
+    border: var(--border-width) solid var(--main-dark-color);
+    border-radius: var(--border-radius);
+    background-color: #eec643;
+    color: var(--main-box-bgclr);
+    font-weight: 600;
+    padding: 5%;
+    font-size: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .footer-box3 {
     grid-area: 1 / 1 / 2 / 2;
-    border: 3px solid black;
+    border: var(--border-width) solid var(--main-dark-color);
+    border-radius: var(--border-radius);
+    background-color: #0076b2;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .footer-box4 {
     grid-area: 1 / 2 / 2 / 3;
-    border: 3px solid black;
+    border: var(--border-width) solid var(--main-dark-color);
+    border-radius: var(--border-radius);
+    background-color: #181616;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .main-container {
   width: 55%;
-  height: 100%;
+  height: 99%;
 
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(7, 1fr);
-  grid-gap: 10px;
+  gap: var(--gap-size);
 }
