@@ -1,6 +1,6 @@
 @keyframes slideLeft {
   from {
-    transform: translateX(-300px);
+    transform: translateX(-500px);
   }
 
   to {
@@ -10,7 +10,7 @@
 
 @keyframes slideRight {
   from {
-    transform: translateX(300px);
+    transform: translateX(500px);
   }
 
   to {
@@ -20,7 +20,7 @@
 
 @keyframes slideUp {
   from {
-    transform: translateY(300px);
+    transform: translateY(500px);
   }
 
   to {
@@ -38,9 +38,24 @@
   }
 }
 
+@keyframes rotateTHD {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .header-box1 {
-  animation-name: slideLeft;
+  animation-name: smallToNormal;
   animation-duration: 1.2s;
+}
+
+.header-box1:hover {
+  animation-name: rotateTHD;
+  animation-duration: 0.7s;
 }
 
 .header-box2 {
@@ -105,10 +120,20 @@
   transform: scale(0.9);
 }
 
+.footer-box2:active {
+  transition: 0.1s;
+  background-color: var(--main-box-bgclr);
+  color: #eec643;
+}
+
 .footer-box3:hover {
   transform: scale(0.9);
 }
 
 .footer-box4:hover {
   transform: scale(0.9);
+}
+
+.svg-in-list:hover {
+  transform: scale(1.1);
 }

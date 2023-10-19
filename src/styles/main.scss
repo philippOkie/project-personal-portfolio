@@ -33,6 +33,10 @@ body {
   gap: var(--gap-size);
 }
 
+.svg-in-list {
+  transition: 0.2s;
+}
+
 @media (max-width: 1500px) {
   .main-container {
     width: 80%;
