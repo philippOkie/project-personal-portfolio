@@ -1,7 +1,6 @@
 @import url(./reset.scss);
 @import url(./toggle-switch.scss);
 @import url(./animations.scss);
-@import url(./mq.scss);
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 :root {
@@ -11,6 +10,7 @@
   --main-color: #c6c5b9;
   --main-dark-color: #393d3f;
   --main-box-bgclr: #fdfdff;
+  --pad-size: 5%;
 }
 
 body {
@@ -45,6 +45,18 @@ body {
   }
 }
 
+input {
+  border-radius: var(--border-radius);
+  font-size: 2em;
+}
+
+textarea {
+  border-radius: var(--border-radius);
+  font-size: 2em;
+  resize: none;
+  overflow-y: scroll;
+}
+
 header {
   grid-area: 1 / 1 / 2 / 2;
 
@@ -63,7 +75,7 @@ header {
     background-color: var(--main-box-bgclr);
     font-weight: 600;
     font-size: 4.5em;
-    padding: 5%;
+    padding: var(--pad-size);
 
     display: flex;
     justify-content: center;
@@ -92,7 +104,7 @@ main {
     background-color: var(--main-box-bgclr);
     color: var(--main-dark-color);
     font-weight: 700;
-    padding: 5%;
+    padding: var(--pad-size);
     font-size: 5em;
 
     display: flex;
@@ -104,7 +116,7 @@ main {
     border: var(--border-width) solid var(--main-dark-color);
     border-radius: var(--border-radius);
     background-color: var(--main-box-bgclr);
-    padding: 5%;
+    padding: var(--pad-size);
 
     display: flex;
     justify-content: center;
@@ -115,12 +127,28 @@ main {
     border: var(--border-width) solid var(--main-dark-color);
     border-radius: var(--border-radius);
     background-color: var(--main-box-bgclr);
+
+    padding: var(--pad-size);
+
+    h2 {
+      font-size: 3em;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1.5em;
+    }
   }
   .main-box5 {
     grid-area: 4 / 1 / 5 / 6;
     border: var(--border-width) solid var(--main-dark-color);
     border-radius: var(--border-radius);
     background-color: var(--main-box-bgclr);
+    padding: var(--pad-size);
+
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
   }
 }
 
@@ -139,11 +167,18 @@ footer {
 
     .contact-me {
       height: 100%;
-      padding: 5%;
+      padding: var(--pad-size);
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 2fr 2fr 5fr 2fr;
       gap: 10px;
+
+      .submit-contact-btn {
+        border-radius: var(--border-radius);
+        background-color: var(--main-dark-color);
+        color: var(--main-box-bgclr);
+        font-size: 2em;
+      }
     }
   }
   .footer-box2 {
@@ -153,7 +188,7 @@ footer {
     background-color: #eec643;
     color: var(--main-box-bgclr);
     font-weight: 600;
-    padding: 5%;
+    padding: var(--pad-size);
     font-size: 7em;
     display: flex;
     justify-content: center;
@@ -164,7 +199,7 @@ footer {
     border: var(--border-width) solid var(--main-dark-color);
     border-radius: var(--border-radius);
     background-color: #0076b2;
-    padding: 5%;
+    padding: var(--pad-size);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,7 +209,7 @@ footer {
     border: var(--border-width) solid var(--main-dark-color);
     border-radius: var(--border-radius);
     background-color: #181616;
-    padding: 5%;
+    padding: var(--pad-size);
     display: flex;
     justify-content: center;
     align-items: center;
