@@ -1,11 +1,114 @@
 @keyframes slideLeft {
+  from {
+    transform: translateX(-300px);
+  }
+
+  to {
+    transform: translate(0);
+  }
 }
 
 @keyframes slideRight {
+  from {
+    transform: translateX(300px);
+  }
+
+  to {
+    transform: translate(0);
+  }
 }
 
 @keyframes slideUp {
+  from {
+    transform: translateY(300px);
+  }
+
+  to {
+    transform: translate(0);
+  }
 }
 
-@keyframes slideDown {
+@keyframes smallToNormal {
+  from {
+    transform: scale(0.1);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.header-box1 {
+  animation-name: slideLeft;
+  animation-duration: 1.2s;
+}
+
+.header-box2 {
+  animation-name: slideRight;
+  animation-duration: 0.7s;
+}
+
+.main-box1 {
+  animation-name: slideLeft;
+  animation-duration: 0.8s;
+}
+
+.main-box2 {
+  animation-name: smallToNormal;
+  animation-duration: 1s;
+  transition: 0.5s;
+}
+
+.main-box3 {
+  animation-name: slideRight;
+  animation-duration: 0.5s;
+}
+
+.main-box4 {
+  animation-name: slideRight;
+  animation-duration: 0.9s;
+}
+
+.main-box5 {
+  animation-name: slideRight;
+  animation-duration: 0.7s;
+}
+
+.footer-box1 {
+  animation-name: slideUp;
+  animation-duration: 0.5s;
+}
+
+.footer-box2 {
+  animation-name: slideUp;
+  animation-duration: 0.8s;
+  transition: 0.5s;
+}
+
+.footer-box3 {
+  animation-name: slideLeft;
+  animation-duration: 0.8s;
+  transition: 0.5s;
+}
+
+.footer-box4 {
+  animation-name: smallToNormal;
+  animation-duration: 1s;
+  transition: 0.5s;
+}
+
+.main-box2:hover {
+  transform: scale(0.9);
+}
+
+.footer-box2:hover {
+  transform: scale(0.9);
+}
+
+.footer-box3:hover {
+  transform: scale(0.9);
+}
+
+.footer-box4:hover {
+  transform: scale(0.9);
 }
