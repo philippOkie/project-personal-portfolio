@@ -124,9 +124,11 @@ main {
     .slide-btn {
       border-radius: var(--border-radius);
       background-color: var(--main-dark-color);
+      height: 100%;
       color: var(--main-box-bgclr);
       font-weight: 600;
       font-size: 4em;
+      transition: 0.1s;
     }
   }
   .main-box2 {
@@ -213,6 +215,7 @@ footer {
         color: var(--main-box-bgclr);
         font-weight: 600;
         font-size: 3em;
+        transition: 0.1s;
       }
     }
   }
