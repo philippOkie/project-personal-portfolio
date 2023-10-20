@@ -4,6 +4,7 @@ import { changeTheme, themeBtn, r } from "./components/ui-module";
 const getEmailBtn = document.getElementById("getEmailBtn");
 const myEmail = "kriukphilipp@gmail.com";
 const textArea = document.createElement("textarea");
+const submitBtn = document.getElementById("submitBtn");
 
 getEmailBtn.addEventListener("click", () => {
   textArea.value = myEmail;

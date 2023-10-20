@@ -38,8 +38,7 @@
             tincidunt erat dui, ut suscipit urna varius sed. Donec bibendum diam
             quam, non volutpat odio tempor nec. Donec hendrerit nisl ac purus.
             Vivamus ultrices tincidunt nunc vel aliquet. In tincidunt erat dui,
-            ut suscipit urna varius sed. Donec bibendum diam quam, non volutpat
-            odio tempor nec. Donec hendrerit nisl ac purus.
+            ut suscipit urna varius sed. Donec bibendum diam quam.
           </p>
         </div>
         <div class="main-box5">
@@ -152,16 +151,38 @@
       </main>
       <footer>
         <div class="footer-box1">
-          <form class="contact-me" action="contact">
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="E-Mail" />
+          <form
+            class="contact-me"
+            method="POST"
+            action="https://formsubmit.co/kriukphilipp@gmail.com"
+            id="sayMeHi"
+          >
+            <input
+              type="text"
+              placeholder="Name"
+              id="name"
+              name="name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="E-Mail"
+              id="fromWhoEmail"
+              required
+            />
             <textarea
+              name="message"
               type="text"
               placeholder="Your Message"
+              id="messageToSend"
               cols="30"
               rows="10"
+              required
             ></textarea>
-            <button class="submit-contact-btn">send</button>
+            <button class="submit-contact-btn" type="submit" id="submitBtn">
+              send
+            </button>
           </form>
         </div>
         <button class="footer-box2" id="getEmailBtn">MAIL</button>
