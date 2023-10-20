@@ -38,24 +38,9 @@
   }
 }
 
-@keyframes rotateTHD {
-  from {
-    transform: rotate(0);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .header-box1 {
   animation-name: smallToNormal;
   animation-duration: 1.2s;
-}
-
-.header-box1:hover {
-  animation-name: rotateTHD;
-  animation-duration: 0.7s;
 }
 
 .header-box2 {
@@ -109,7 +94,7 @@
 .footer-box4 {
   animation-name: smallToNormal;
   animation-duration: 1s;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 .main-box2:hover {
@@ -123,7 +108,7 @@
 .footer-box2:active {
   transition: 0.1s;
   background-color: var(--main-box-bgclr);
-  color: #eec643;
+  color: var(--main-dark-color);
 }
 
 .footer-box3:hover {

@@ -13,7 +13,12 @@
   --pad-size: 5%;
 }
 
+input {
+  background-color: var(--main-box-bgclr);
+}
+
 body {
+  padding: 1%;
   height: 176%;
   display: flex;
   align-items: center;
@@ -37,7 +42,7 @@ body {
   transition: 0.2s;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1600px) {
   .main-container {
     width: 80%;
   }
@@ -51,15 +56,18 @@ body {
 
 input {
   border-radius: var(--border-radius);
-  font-size: 2em;
   width: 100%;
+  font-weight: 600;
+  font-size: 3em;
 }
 
 textarea {
   border-radius: var(--border-radius);
-  font-size: 2em;
+  font-weight: 600;
+  font-size: 3em;
   resize: none;
   overflow-y: scroll;
+  background-color: var(--main-box-bgclr);
 }
 
 header {
@@ -117,7 +125,8 @@ main {
       border-radius: var(--border-radius);
       background-color: var(--main-dark-color);
       color: var(--main-box-bgclr);
-      font-size: 3em;
+      font-weight: 600;
+      font-size: 4em;
     }
   }
   .main-box2 {
@@ -201,7 +210,8 @@ footer {
         border-radius: var(--border-radius);
         background-color: var(--main-dark-color);
         color: var(--main-box-bgclr);
-        font-size: 2em;
+        font-weight: 600;
+        font-size: 3em;
       }
     }
   }
